@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1705.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lossless", "Lossless.csproj", "{FFC33466-5F87-4F94-9A0B-F6B5B45EAC65}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFC33466-5F87-4F94-9A0B-F6B5B45EAC65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFC33466-5F87-4F94-9A0B-F6B5B45EAC65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFC33466-5F87-4F94-9A0B-F6B5B45EAC65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFC33466-5F87-4F94-9A0B-F6B5B45EAC65}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F636388F-65E7-4534-A8D2-C8031B6C4DF9}
+	EndGlobalSection
+EndGlobal

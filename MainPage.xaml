@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lossless.MainPage"
+             Style="{StaticResource BlackContentPageStyle}">
+             
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="40"
+            VerticalOptions="Center">
+
+            <Image
+                Source="lossless.png"
+                BackgroundColor="White"
+                MaximumHeightRequest="370"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Welcome to the world"
+                TextColor="White"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="of LossLess"
+                TextColor="White"
+                FontSize="25"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="Login"
+                Text="Login"
+                TextColor="Black"
+                BackgroundColor="White"
+                FontSize="Subtitle"
+                Padding="50"
+                MaximumHeightRequest="40"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="Register"
+                Text="Dont have an account? Register!"
+                TextColor="White"
+                BackgroundColor="Black"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+
