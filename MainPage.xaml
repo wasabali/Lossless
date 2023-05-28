@@ -11,9 +11,10 @@
             VerticalOptions="Center">
 
             <Image
-                Source="lossless.png"
+                Source="losslesslogo.png"
                 BackgroundColor="White"
-                MaximumHeightRequest="370"
+                MaximumHeightRequest="337"
+                MaximumWidthRequest="400"
                 HorizontalOptions="Center" />
 
             <Label
