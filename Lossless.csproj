@@ -53,6 +53,12 @@
 	  <Folder Include="Resources\AppIcon\" />
 	  <BundleResource Include="Resources\Fonts\UberMoveBold.otf" />
 	  <BundleResource Include="Resources\Fonts\UberMoveMedium.otf" />
+	  <Folder Include="Domain\" />
+	  <Folder Include="Domain\Entities\" />
+	  <Folder Include="Domain\Entities\User\" />
+	  <Folder Include="Domain\Entities\Media\" />
+	  <Folder Include="Domain\Integration\" />
+	  <Folder Include="Domain\Entities\Utility\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiIcon Include="Resources\AppIcon\appicon.png" />
@@ -65,6 +71,12 @@
 	  <None Remove="Resources\Images\LossLessLogo.png" />
 	  <None Remove="Resources\Images\lossless.svg" />
 	  <None Remove="Resources\Images\loss.png" />
+	  <None Remove="Domain\" />
+	  <None Remove="Domain\Entities\" />
+	  <None Remove="Domain\Entities\User\" />
+	  <None Remove="Domain\Entities\Media\" />
+	  <None Remove="Domain\Integration\" />
+	  <None Remove="Domain\Entities\Utility\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiImage Include="Resources\Images\losslesslogo.png" />
