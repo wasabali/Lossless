@@ -1,17 +1,9 @@
 ﻿using System;
 namespace Lossless.Domain.Entities.Utility
 {
-    public class MediaController
+    public class PostMedia
     {
-        static void ImportMedia()
-        {
-        }
 
-        static void EditMedia()
-        {
-        }
-
-        static void 
     }
 }
 
