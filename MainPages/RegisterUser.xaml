@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lossless.MainPages.RegisterUser"
+             Title="RegisterUser"
+             Style="{StaticResource BlackContentPageStyle}">
+
+     <Grid VerticalOptions="Center" HorizontalOptions="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition />
+            <RowDefinition Height="50"/>
+            <RowDefinition />
+            <RowDefinition Height="50"/>
+            <RowDefinition />
+            <RowDefinition Height="20"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Label Text="Register"
+               TextColor="White"
+               FontSize="20"
+               FontFamily="UberMedium"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+
+        <Entry Placeholder="Navn"
+               x:Name="NameEntry"
+               Grid.Row="1"
+               WidthRequest="200"
+               FontFamily="UberMedium"
+               FontSize="20"
+               PlaceholderColor="White"
+               TextColor="White" />
+
+        <Entry Placeholder="Passord"
+               IsPassword="True"
+               x:Name="PasswordEntry"
+               Grid.Row="3"
+               WidthRequest="200"
+               FontFamily="UberMedium"
+               FontSize="20"
+               PlaceholderColor="White"
+               TextColor="White"/>
+
+        <Entry Placeholder="Hash"
+               x:Name="HashEntry"
+               Grid.Row="5"
+               WidthRequest="200"
+               FontFamily="UberMedium"
+               FontSize="20"
+               PlaceholderColor="White"
+               TextColor="White" />
+
+        <Button Text="Logg inn"
+                Clicked="LoginButton_Clicked"
+                Grid.Row="10"
+                FontFamily="UberMedium"
+                WidthRequest="100"
+                BackgroundColor="LightGray"
+                TextColor="Black"
+                />
+    </Grid>
+</ContentPage>

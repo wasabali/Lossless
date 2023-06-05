@@ -32,6 +32,7 @@
             <Button
                 x:Name="Login"
                 Text="Login"
+                Clicked="Login_Clicked"
                 TextColor="Black"
                 BackgroundColor="White"
                 FontSize="Subtitle"
@@ -42,6 +43,7 @@
             <Button
                 x:Name="Register"
                 Text="Dont have an account? Register!"
+                Clicked="Register_Clicked"
                 TextColor="White"
                 BackgroundColor="Black"
                 FontSize="18"
