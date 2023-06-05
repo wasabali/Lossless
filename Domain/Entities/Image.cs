@@ -1,26 +1,15 @@
 ﻿using System;
 using Microsoft.Maui.Platform;
 
-namespace Lossless.Domain.Entities.Media
+namespace Lossless.Domain.Entities
 {
-    public class NewMedia
+    public class Image
     {
-        // atributter for media
-    }
-
-    public class MediaController
-    {
-        static void PostMedia()
-        {
-            // Lage et media objekt
-            // Linke media til bruker
-            // Poste media til Azure db
-        }
-
-        static void ImportMedia()
-        {
-            // Kontroll for
-        }
+        private int Id { get; set; }
+        private double Size { get; set; }
+        private string FileName { get; set; }
+        private string FileType { get; set; }
+        private int Likes { get; set; }
     }
 }
 

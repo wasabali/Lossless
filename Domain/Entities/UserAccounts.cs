@@ -1,19 +1,16 @@
 ﻿using System;
-namespace Lossless.Domain.Entities.User
+namespace Lossless.Domain.Entities
 {
     public class UserAccounts
     {
-        // variabler for bruker
-    }
+        private string FirstName { get; set; }
+        private string SurName { get; set; }
+        private int Age { get; set; }
+        private string Email { get; set; }
+        private string Id { get; set; }
 
-    public class UserController
-    {
-        static void RegisterUser()
-        {
-            // Lage bruker objekt
-            // Konstruere verdier
-            // Legge til brukere i Azure db
-        }
+
+
     }
 }
 
