@@ -11,12 +11,12 @@ public partial class MainPage : ContentPage
     }
 
 
-    void Login_Clicked(System.Object sender, System.EventArgs e)
+    private void Login_Clicked(System.Object sender, System.EventArgs e)
     {
         Navigation.PushAsync(new LoginPage());
     }
 
-    void Register_Clicked(System.Object sender, System.EventArgs e)
+    private void Register_Clicked(System.Object sender, System.EventArgs e)
     {
         Navigation.PushAsync(new RegisterUser());
     }

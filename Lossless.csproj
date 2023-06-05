@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
-		<TargetFrameworks>net6.0-android;net6.0-ios;net6.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks>net6.0-ios;net6.0-maccatalyst</TargetFrameworks>
 		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net6.0-windows10.0.19041.0</TargetFrameworks>
 		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
 		<!-- <TargetFrameworks>$(TargetFrameworks);net6.0-tizen</TargetFrameworks> -->
@@ -36,6 +36,9 @@
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-ios|AnyCPU'">
 	  <CreatePackage>false</CreatePackage>
 	</PropertyGroup>
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	  <WarningLevel>4</WarningLevel>
+	</PropertyGroup>
 	<ItemGroup>
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
 
@@ -49,16 +52,13 @@
 	<ItemGroup>
 	  <Folder Include="MainPages\" />
 	  <Folder Include="Resources\Images\" />
-	  <Folder Include="Components\" />
 	  <Folder Include="Resources\AppIcon\" />
 	  <BundleResource Include="Resources\Fonts\UberMoveBold.otf" />
 	  <BundleResource Include="Resources\Fonts\UberMoveMedium.otf" />
 	  <Folder Include="Domain\" />
 	  <Folder Include="Domain\Entities\" />
-	  <Folder Include="Domain\Entities\User\" />
-	  <Folder Include="Domain\Entities\Media\" />
 	  <Folder Include="Domain\Integration\" />
-	  <Folder Include="Domain\Entities\Utility\" />
+	  <Folder Include="Domain\Utility\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiIcon Include="Resources\AppIcon\appicon.png" />
@@ -73,10 +73,8 @@
 	  <None Remove="Resources\Images\loss.png" />
 	  <None Remove="Domain\" />
 	  <None Remove="Domain\Entities\" />
-	  <None Remove="Domain\Entities\User\" />
-	  <None Remove="Domain\Entities\Media\" />
 	  <None Remove="Domain\Integration\" />
-	  <None Remove="Domain\Entities\Utility\" />
+	  <None Remove="Domain\Utility\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiImage Include="Resources\Images\losslesslogo.png" />

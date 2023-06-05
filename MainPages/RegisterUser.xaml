@@ -3,10 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Lossless.MainPages.RegisterUser"
              Title="RegisterUser"
-             Style="{StaticResource BlackContentPageStyle}">
+             Style="{StaticResource BlackContentPageStyle}"
+             >
 
      <Grid VerticalOptions="Center" HorizontalOptions="Center">
         <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition />
+            <RowDefinition Height="50"/>
+            <RowDefinition />
+            <RowDefinition Height="50"/>
+            <RowDefinition />
+            <RowDefinition Height="20"/>
+            <RowDefinition />
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
             <RowDefinition />
@@ -23,19 +33,21 @@
                FontSize="20"
                FontFamily="UberMedium"
                HorizontalOptions="Center"
-               VerticalOptions="Center" />
+               VerticalOptions="Center"
+               Opacity="0.7"/>
 
-
-        <Entry Placeholder="Navn"
+        <Entry Placeholder="Name"
                x:Name="NameEntry"
                Grid.Row="1"
                WidthRequest="200"
                FontFamily="UberMedium"
                FontSize="20"
                PlaceholderColor="White"
-               TextColor="White" />
+               TextColor="White"
+               Opacity="0.7" />
+        <Frame x:Name="FrameName" x:FieldModifier="public"  BackgroundColor="Gray" HeightRequest="0.5" Margin="0,0,0,-150"/>
 
-        <Entry Placeholder="Passord"
+        <Entry Placeholder="Password"
                IsPassword="True"
                x:Name="PasswordEntry"
                Grid.Row="3"
@@ -43,7 +55,9 @@
                FontFamily="UberMedium"
                FontSize="20"
                PlaceholderColor="White"
-               TextColor="White"/>
+               TextColor="White"
+               Opacity="0.7" />
+        <Frame x:Name="FramePassword" BackgroundColor="Gray" HeightRequest="0.5" Margin="0,0,0,-250"/>
 
         <Entry Placeholder="Hash"
                x:Name="HashEntry"
@@ -52,15 +66,16 @@
                FontFamily="UberMedium"
                FontSize="20"
                PlaceholderColor="White"
-               TextColor="White" />
+               TextColor="White"
+               Opacity="0.7"/>
+        <Frame x:Name="FrameHash" BackgroundColor="Gray" HeightRequest="0.5" Margin="0,0,0,-350"/>
 
-        <Button Text="Logg inn"
+        <Button Text="Login"
                 Clicked="LoginButton_Clicked"
                 Grid.Row="10"
                 FontFamily="UberMedium"
                 WidthRequest="100"
-                BackgroundColor="LightGray"
-                TextColor="Black"
-                />
+                BackgroundColor="White"
+                TextColor="Black" />
     </Grid>
 </ContentPage>

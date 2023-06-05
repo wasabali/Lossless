@@ -8,7 +8,7 @@
     <ScrollView>
         <VerticalStackLayout
             Spacing="40"
-            VerticalOptions="Center">
+            VerticalOptions="Center" >
 
             <Image
                 Source="losslesslogo.png"
@@ -21,13 +21,15 @@
                 Text="Welcome to the world"
                 TextColor="White"
                 FontSize="32"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"
+                FontFamily="UberMedium"/>
 
             <Label
                 Text="of LossLess"
                 TextColor="White"
                 FontSize="25"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"
+                FontFamily="UberMedium" />
 
             <Button
                 x:Name="Login"
@@ -38,7 +40,8 @@
                 FontSize="Subtitle"
                 Padding="50"
                 MaximumHeightRequest="40"
-                HorizontalOptions="Center" />
+                HorizontalOptions="Center"
+                FontFamily="UberMedium" />
 
             <Button
                 x:Name="Register"
@@ -47,8 +50,8 @@
                 TextColor="White"
                 BackgroundColor="Black"
                 FontSize="18"
-                HorizontalOptions="Center" />
-
+                HorizontalOptions="Center"
+                FontFamily="UberMedium" />
         </VerticalStackLayout>
     </ScrollView>
 

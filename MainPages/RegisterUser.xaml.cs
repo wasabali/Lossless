@@ -1,5 +1,6 @@
 ﻿namespace Lossless.MainPages;
 
+
 public partial class RegisterUser : ContentPage
 {
     public RegisterUser()
