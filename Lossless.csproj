@@ -32,6 +32,8 @@
 
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-ios|AnyCPU'">
 	  <CreatePackage>false</CreatePackage>
+	  <CodesignKey>iPhone Developer</CodesignKey>
+	  <CodesignEntitlements>Platforms\iOS\Entitlements.plist</CodesignEntitlements>
 	</PropertyGroup>
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net6.0-ios|AnyCPU'">
 	  <CreatePackage>false</CreatePackage>
@@ -50,7 +52,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="MainPages\" />
 	  <Folder Include="Resources\Images\" />
 	  <Folder Include="Resources\AppIcon\" />
 	  <BundleResource Include="Resources\Fonts\UberMoveBold.otf" />
@@ -59,6 +60,7 @@
 	  <Folder Include="Domain\Entities\" />
 	  <Folder Include="Domain\Integration\" />
 	  <Folder Include="Domain\Utility\" />
+	  <Folder Include="Domain\0Auth\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiIcon Include="Resources\AppIcon\appicon.png" />
@@ -75,11 +77,16 @@
 	  <None Remove="Domain\Entities\" />
 	  <None Remove="Domain\Integration\" />
 	  <None Remove="Domain\Utility\" />
+	  <None Remove="Domain\0Auth\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiImage Include="Resources\Images\losslesslogo.png" />
 	  <MauiImage Include="Resources\Images\lossless.svg">
 	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	  </MauiImage>
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="IdentityModel.OidcClient" Version="5.2.1" />
+	  <PackageReference Include="IdentityModel.OidcClient.IdentityTokenValidator" Version="5.2.1" />
 	</ItemGroup>
 </Project>
