@@ -30,9 +30,10 @@
                 FontSize="25"
                 HorizontalOptions="Center"
                 FontFamily="UberMedium" />
-
-            <Button
-                x:Name="Login"
+            <StackLayout
+                x:Name="LoginView">
+                <Button
+                x:Name="LoginBtn"
                 Text="Login"
                 Clicked="Login_Clicked"
                 TextColor="Black"
@@ -42,9 +43,14 @@
                 MaximumHeightRequest="40"
                 HorizontalOptions="Center"
                 FontFamily="UberMedium" />
+            </StackLayout>
 
-            <Button
-                x:Name="Register"
+            <StackLayout
+                x:Name="HomeView"
+                IsVisible="false">
+
+                <Button
+                x:Name="LogoutBtn"
                 Text="Dont have an account? Register!"
                 Clicked="Register_Clicked"
                 TextColor="White"
@@ -52,6 +58,7 @@
                 FontSize="18"
                 HorizontalOptions="Center"
                 FontFamily="UberMedium" />
+          </StackLayout>
         </VerticalStackLayout>
     </ScrollView>
 
